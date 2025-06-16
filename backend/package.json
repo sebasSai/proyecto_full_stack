@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon --config nodemon.json",
-    "build": "tsc",
+    "build": "rm -rf dist && tsc",
     "start": "node dist/app.js",
     "test": "jest"
   },
