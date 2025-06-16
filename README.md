@@ -11,7 +11,14 @@ Este repositorio contiene una aplicación con un backend en Express y un fronten
    cd ../frontend && npm install
    ```
 
-2. Ejecuta los servidores de desarrollo:
+2. Copia `backend/.env.example` a `backend/.env` y proporciona valores para
+   `DATABASE_URL`, `PORT` y `JWT_SECRET`. Opcionalmente ejecuta:
+
+   ```bash
+   npx prisma migrate dev
+   ```
+
+3. Ejecuta los servidores de desarrollo:
 
    ```bash
    cd backend && npm run dev
