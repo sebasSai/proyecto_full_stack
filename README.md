@@ -26,3 +26,12 @@ Este repositorio contiene una aplicación con un backend en Express y un fronten
    ```
 
 El backend utiliza `nodemon` con la configuración del archivo `nodemon.json`.
+
+## Docker
+
+Con Docker puedes levantar todo el entorno con PostgreSQL incluido:
+
+```bash
+docker compose up --build
+```
+
