@@ -19,3 +19,14 @@ Este repositorio contiene una aplicación con un backend en Express y un fronten
    ```
 
 El backend utiliza `nodemon` con la configuración del archivo `nodemon.json`.
+
+## Docker
+
+Para construir la imagen del backend ejecuta:
+
+```bash
+cd backend
+docker build -t backend-app .
+```
+
+La imagen instala las dependencias, compila el proyecto TypeScript y arranca `node dist/app.js`.
